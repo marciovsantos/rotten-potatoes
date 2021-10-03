@@ -79,7 +79,7 @@ spec:
   - port: 80
     targetPort: 5000
     nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
 
 #para subir uma imagem local no kind sem precisar enviar para o docker hub
 #kind --name meucluster load docker-image marciovsantos/rotten-potatoes:1.0 
